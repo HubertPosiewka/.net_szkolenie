@@ -63,14 +63,14 @@ Po deklaracji wszystkich zmiennych wyświetl je w konsoli.
 1. Wyświetl zmienne `and, or i negative` w konsoli.
 
 
-#### Zadanie 4
+#### Zadanie 4 *dodatkowe
 
 1. Utwórz dwie zmienne o nazwach `a`, `b` i przypisz do nich wartości `5, 12`.
 1. Utwórz zmienne o nazwach `add`, `sub`, `div`, `mul`, `mod` i przypisz do nich kolejno wynik dodawania, odejmowania, dzielenia, mnożenia i modulo zmiennych `a` i `b`.
 1. Wyświetl zmienne `add`, `sub`, `div`, `mul`, `mod` w konsoli.
 
 
-#### Zadanie 5
+#### Zadanie 5 *dodatkowe
 
 1. Utwórz trzy zmienne typu `string` o nazwach `a`, `b` i `c`.
 1. Do zmiennych przypisz kolejno tekst `Ala `, `ma `, `kota.`.
@@ -106,7 +106,7 @@ itd...
 
 Jak sprawdzić czy liczba jest parzysta? Podpowiedź: `modulo`.
 
-#### Zadanie 4
+#### Zadanie 4 *dodatkowe
 
 1. Stwórz zmienną o nazwie `n`, która będzie zawierała wartość 5.
 1. Następnie napisz skrypt, który wypisze w konsoli poniższy schemat.
@@ -127,7 +127,7 @@ Schemat dla `n = 3`.
 * * *
 ```
 
-#### Zadanie 5
+#### Zadanie 5 *dodatkowe
 
 1. Utwórz zmienną `exam`, która będzie zawierała wartość od 0 do 100.
 1. Zmienna `exam` przechowuje wyniki egzaminu.
@@ -162,7 +162,7 @@ Liczba: 0
 Liczba: 1
 ```
 
-#### Zadanie 3
+#### Zadanie 3 *dodatkowe
 
 1. Utwórz czteroelementową listę `List<string>` o nazwie `fruits`.
 1. Tablicę uzupełnij dowolnymi nazwami owoców, używając metody remove.
@@ -173,7 +173,7 @@ Liczba: 1
 
 ## Warsztat
 
-### Zadanie 1: Zapoznanie się z Visual Studio
+#### Zadanie 1: Zapoznanie się z Visual Studio
 
 1. Utwórz nową solucję o nazwie Library
 2. W solucji utwórz projekt Library.ConsoleApp typu aplikacja konsolowa
@@ -224,7 +224,7 @@ BooksRepository repository = new BooksRepository();
 13. *Utworz katalog solucji Logic
 14. *Przenies do katalogu Logic projekty Library.Domain oraz Library.Persistence
 
-### Zadanie 2: Instrukcje Warunkowe / Debugowanie
+#### Zadanie 2: Instrukcje Warunkowe / Debugowanie
 
 1. Otwórz plik Program.cs w projekcie Library.ConsoleApp
 2. Za pomocą API obiektu console, pobierz od uzytkownika jego login i haslo
@@ -237,7 +237,7 @@ string text = Console.ReadLine();
 6. Urucham projekt Library.ConsoleApp w trybie Debug
 7. Za pomocą przycisku F10 przejdź przez flow programu
 
-### Zadanie 3: Utworzenie menu w aplikacji konsol / Pętle sterujące 
+#### Zadanie 3: Utworzenie menu w aplikacji konsol / Pętle sterujące 
 
 1. Otworz plik Program.cs z aplikacji Library.ConsoleApp
 2. Następnie za pomocą pętli zczytuj kolejne linie tekstu wprowadzone przez uzytkownika
@@ -254,53 +254,3 @@ string text = Console.ReadLine();
 7. Wykorzystaj komendę `Console.WriteLine` aby wyswietlic uzytkownikowi mozliwe do wpisania komendy
 8. *W przypadku kiedy uzytkownik poda nie wspierana komende, aplikacja powinna wyswietlic informacje ze podana komenda nie jest wspierana
 9. *Po kazdej komendzie aplikacja powinna wyswietlic napis: `Press AnyKey` i wstrzymac wykonywanie programu do czasu wcisniecia klawisza
-
-### Zadanie 4: Books Service
-
-1. W projekcie Library.ConsoleApp stwórz klasę `BooksService`
-2. W klasie `BooksService` zaimplementuj takie metody jak: 
-   - AddBook():void -> Powinno pobrac od uzytkownika wszystkie dane potrzebne do stworzenia instancji klasy `Book`
-   - RemoveBook():void -> Powinno pobrac od uzytkownika tytul ksiazki do usuniecia
-   - ListBooks():void -> Ta metoda powinna wyswietlic napis `Tutaj pojawi sie lista ksiazek`
-   - ChangeState():void -> Ta metoda powinna pobrac od uzytkownikow tytul ksiazki, której stan ma się zmienic oraz samą zmianę stanu np. -1
-Do konwersji string-a na int-a uzyj klasy Convert
-```csharp
-Convert.ToInt32(Console.ReadLine());
-```
-3. Przejdz do pliku `Program.cs` w projekcie Library.ConsoleApp
-4. Przed pętlą utwórz obiekt klasy `BooksService`
-5. W srodku pętli podmien wyswietlanie tekstow na wywołanie odpowiedniej metody z obiektu klasy `BooksService`
-6. Uruchom aplikację i sprawdz czy wsyzstko działa poprawnie
-
-### Zadanie 5: Dodanie repozytorium
-
-1. Otwórz klasę `BooksRepository` znajdującą się w projekcie Library.Persistence
-2. Utwórz pole `readonly List<Book>` o nazwie _database
-3. Utwórz bezparametroy Konstruktor
-4. W konstruktorze dodaj kilka ksiązek, mozesz do tego uzyc ponizszych: 
-```csharp
-    new Book("Stary człowiek i morze", "Ernest Hemingway", 1986, "AAAA", 10, 19.99m),
-    new Book("Komu bije dzwon", "Ernest Hemingway", 1997, "BBBB", 0, 119.99m),
-    new Book("Alicja w krainie czarów", "C.K. Lewis", 1998, "CCCC", 53, 39.99m),
-    new Book("Opowieści z Narnii", "C.K. Lewis", 1999, "DDDD", 33, 49.99m),
-    new Book("Harry Potter", "J.K. Rowling", 2000, "EEEE", 23, 69.99m),
-    new Book("Paragraf 22", "Joseph Heller", 2001, "FFFF", 5, 45.99m),
-    new Book("Lalka", "Bolesław Prus", 2002, "GGGG", 7, 76.99m),
-    new Book("To", "Stephen King", 2003, "HHHH", 2, 12.99m),
-    new Book("Idiota", "Fiodor Dostojewski", 1950, "IIII", 89, 25.99m),
-    new Book("Mistrz i Małgorzata", "Michaił Bułhakow", 1965, "JJJJ", 41, 36.99m),   
-```
-5. Dodaj metodę `Insert(Book book): void`, która będzie odpowiedzialna za dodawanie nowej ksiązki do listy
-6. Dodaj metodę `GetAll(): List<Book>`, która będzie zwracac wszystkie ksiązki, które znajdują się w repozytorium
-7. Dodaj metodę `RemoveByTitle(string title): void`, która będzie kasowac wybraną ksiązke z repozytorium. Aby szybciej namierzyc ksiązke mozesz uzyc ponizszego wyrazenia LINQ
-```csharp
-.First(x => x.Title == title)
-```
-8. Dodaj metode `ChangeState(string title, in stateChange)`, która będzie uaktualniac stan w wybranym tytule. Wykorzystaj wyrazenie LINQ z poprzedniego cwiczenia.
-9. Przejdz do pliku `BooksService` w projekcie Library.ConsoleApp
-10. Utwórz konstruktor, w którym jedynym parametrem będzie obiekt klasy `BooksRepository`
-11. Przypisz obiekt klasy `BooksRepository` do pola w klasie o nazwie `_repository`
-12. Wykorzystaj obiekt `_repository` w wywołaniach metod klasy `BooksService`
-13. Przejdz do pliku `Program.cs` i przed utworzeniem obiektu `BooksService` utworz obiekt klasy `BooksRepository`
-14. Przekaz obiekt klasy `BooksRepository` do konstruktora klasy `BooksService`
-15. Przetestuj czy mozna dodac nową ksiązke do repozytorium 

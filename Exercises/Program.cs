@@ -6,7 +6,7 @@ namespace DayOneExercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Wtaj na szkoleniu Programowanie .NET - kurs podstawowy");
         }
     }
 }
