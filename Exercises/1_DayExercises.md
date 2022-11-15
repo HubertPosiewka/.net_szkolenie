@@ -4,11 +4,12 @@
 
 #### Zadanie 1
 
-Stwórz w solucji nowy projekt typu Console App (.Net Core).
+1. Stwórz w solucji nowy projekt typu Console App (.Net Core).
+2. Tworząc nowy projekt wybierz framework .NET 6.
 
 #### Zadanie 2
 
-W metodzie `Main` umieść następujący kod:
+W pliku `Program.cs` umieść następujący kod:
 ```csharp
 Console.WriteLine("Podaj swoje imię:");
 var name = Console.ReadLine();
@@ -18,7 +19,7 @@ Console.WriteLine("Hello " + name);
 
 #### Zadanie 3
 
-W metodzie `Main` umieść następujący kod:
+W pliku `Program.cs` umieść następujący kod:
 ```csharp
 int result = 5 + 9
 ```
@@ -29,7 +30,7 @@ int result = 5 + 9
 
 #### Zadanie 1
 
-1. W metodzie `Main` utwórz 6 zmiennych.
+1. W pliku `Program.cs` utwórz 6 zmiennych.
 1. Każda zmienna powinna przechowywać odpowiednio dobrany przez Ciebie typ danych na podstawie opisu.
 1. Wartości mogą być dowolne.
 * Zmienna o nazwie `number` przechowująca liczbę całkowitą.
