@@ -166,9 +166,9 @@ Liczba: 1
 #### Zadanie 3 *dodatkowe
 
 1. Utwórz czteroelementową listę `List<string>` o nazwie `fruits`.
-1. Tablicę uzupełnij dowolnymi nazwami owoców, używając metody remove.
-1. Wyświetl w konsoli wszystkie owoce według wzoru `Pomidor, Jabłko, Marchewka`. Między nazwami owoców musi się znaleźć przecinek i spacja.
-4. Usuń za pomocą metod `Revome i RemoveAt` pierwszy i ostatni element listy.
+2. Tablicę uzupełnij dowolnymi nazwami owoców, używając metody `Add`.
+3. Wyświetl w konsoli wszystkie owoce według wzoru `Pomidor, Jabłko, Marchewka`. Między nazwami owoców musi się znaleźć przecinek i spacja.
+4. Usuń za pomocą metod `Remove i RemoveAt` pierwszy i ostatni element listy.
 5. Wyświetl wszystkie elementy listy.
 
 
