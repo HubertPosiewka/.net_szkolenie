@@ -50,7 +50,6 @@ Po deklaracji wszystkich zmiennych wyświetl je w konsoli.
 1. Wyświetl zmienną `result` w konsoli.
 5. Jakie wnioski?
 
-
 #### Zadanie 3
 
 1. Utwórz 3 zmienne typu `bool` o następujących nazwach i wartościach:
@@ -63,13 +62,11 @@ Po deklaracji wszystkich zmiennych wyświetl je w konsoli.
     1. `negative` powinna zawierać wynik negacji `isFalse`.
 1. Wyświetl zmienne `and, or i negative` w konsoli.
 
-
 #### Zadanie 4 *dodatkowe
 
 1. Utwórz dwie zmienne o nazwach `a`, `b` i przypisz do nich wartości `5, 12`.
 1. Utwórz zmienne o nazwach `add`, `sub`, `div`, `mul`, `mod` i przypisz do nich kolejno wynik dodawania, odejmowania, dzielenia, mnożenia i modulo zmiennych `a` i `b`.
 1. Wyświetl zmienne `add`, `sub`, `div`, `mul`, `mod` w konsoli.
-
 
 #### Zadanie 5 *dodatkowe
 
@@ -171,18 +168,17 @@ Liczba: 1
 4. Usuń za pomocą metod `Remove i RemoveAt` pierwszy i ostatni element listy.
 5. Wyświetl wszystkie elementy listy.
 
-
 ## Warsztat
 
 #### Zadanie 1: Zapoznanie się z Visual Studio
 
-1. Utwórz nową solucję o nazwie Library
-2. W solucji utwórz projekt Library.ConsoleApp typu aplikacja konsolowa
-3. W solucji utwórz projekt Library.Domain typu ClassLib
-4. W solucji utwórz projekt Library.Persistence typu ClassLib
-5. W projekcie Library.Persistence dodaj referencję do projektu Library.Domain
-6. W projekcie Library.ConsoleApp dodaj referencję do projektów Library.Domain i Library.Persistence
-7. W projekcie Library.Domain utwórz klasę ksiązki, mozesz ją skopiowac z kodu ponizej
+1. Utwórz nową solucję o nazwie Library.
+2. W solucji utwórz projekt Library.ConsoleApp typu aplikacja konsolowa.
+3. W solucji utwórz projekt Library.Domain typu ClassLib.
+4. W solucji utwórz projekt Library.Persistence typu ClassLib.
+5. W projekcie Library.Persistence dodaj referencję do projektu Library.Domain.
+6. W projekcie Library.ConsoleApp dodaj referencję do projektów Library.Domain i Library.Persistence.
+7. W projekcie Library.Domain utwórz klasę książki, mozesz ją skopiować z kodu poniżej.
 ```csharp
     public class Book
     {
@@ -213,45 +209,45 @@ Liczba: 1
     }
 }
 ```
-8. W projekcie Library.Persistence utwórz klasę BooksRepository, na chwilę obecną moze to byc pusta klasa
-9. W projekcie Library.ConsoleApp w pliku Program.cs utworz obiekt wczesniej utworzonych klas
+8. W projekcie Library.Persistence utwórz klasę BooksRepository, na chwilę obecną moze to byc pusta klasa.
+9. W projekcie Library.ConsoleApp w pliku Program.cs utworz obiekt wczesniej utworzonych klas.
 ```csharp
-Book book = new Book(/*uzupelnij parametry*/);
+Book book = new Book(/*uzupełnij parametry*/);
 BooksRepository repository = new BooksRepository();
 ```
 10. Skompiluj projek aby sprawdzic czy nie ma w nim błędów.
-11. *Utwórz katalog solucji Presentation
-12. *Przenies do katalogu Presentation projekt Library.ConsoleApp
-13. *Utworz katalog solucji Logic
-14. *Przenies do katalogu Logic projekty Library.Domain oraz Library.Persistence
+11. Utwórz katalog solucji Presentation.
+12. Przenies do katalogu Presentation projekt Library.ConsoleApp.
+13. Utworz katalog solucji Logic.
+14. Przenies do katalogu Logic projekty Library.Domain oraz Library.Persistence.
 
 #### Zadanie 2: Instrukcje Warunkowe / Debugowanie
 
-1. Otwórz plik Program.cs w projekcie Library.ConsoleApp
-2. Za pomocą API obiektu console, pobierz od uzytkownika jego login i haslo
+1. Otwórz plik Program.cs w projekcie Library.ConsoleApp.
+2. Za pomocą API obiektu console, pobierz od uzytkownika jego login i hasło
 ```csharp
 string text = Console.ReadLine();
 ```
-3. Jezeli login to `Admin` a haslo to `password` wypisz na consoli napis `Access Granted`
-4. W przeciwnym wypadku wypisz napis `Access Denied`
+3. Jezeli login to `Admin` a hasło to `password` wypisz na consoli napis `Access Granted`.
+4. W przeciwnym wypadku wypisz napis `Access Denied`.
 5. Za pomocą przycisku F9 (lub klikając w lewą kolumnę edytora) oznacz miejsce z if-em, tak aby wykonywanie programu zatrzymało się.
-6. Urucham projekt Library.ConsoleApp w trybie Debug
-7. Za pomocą przycisku F10 przejdź przez flow programu
+6. Urucham projekt Library.ConsoleApp w trybie Debug.
+7. Za pomocą przycisku F10 przejdź przez flow programu.
 
 #### Zadanie 3: Utworzenie menu w aplikacji konsol / Pętle sterujące 
 
 1. Otworz plik Program.cs z aplikacji Library.ConsoleApp
-2. Następnie za pomocą pętli zczytuj kolejne linie tekstu wprowadzone przez uzytkownika
-3. Pętla ma zakończyc swoje zadanie kiedy uzytkownik wpisze komende `wyjdz`
-4. Pętla ma czekac az uzytkownik wprowadzi komende
-5. Wewnątrz pętli sprawdzaj jaką komendę podał uzytkownik według ponizszej rozpiski: 
-   - dodaj -> Powinna wypisac tekst: "proba dodania ksiazki"
-   - usun -> Powinna wypisac tekst: "proba usuniecia ksiazki"
-   - wypisz -> Powinna wypisac tekst: "proba wypisania wszystkich ksiazek"
-   - zmien -> Powinna wypisac tekst: "proba zmiany stanu magazynowego ksiazek"
-   - dodaj zamowienie -> Powinna wypisac tekst: "proba dodania nowego zamowienia"
-   - lista zamowien -> Powinna wypisac tekst: "proba wypisania wszystkich zamowien"
-6. Wykorzystaj komende `Console.Clear()` aby po wprowadzeniu komendy ekran konsoli wypisywal tylko menu aplikacji
-7. Wykorzystaj komendę `Console.WriteLine` aby wyswietlic uzytkownikowi mozliwe do wpisania komendy
+2. Następnie za pomocą pętli zczytuj kolejne linie tekstu wprowadzone przez użytkownika.
+3. Pętla ma zakończyć swoje zadanie kiedy użytkownik wpisze komendę `wyjdź`.
+4. Pętla ma czekaż aż użytkownik wprowadzi komendę.
+5. Wewnątrz pętli sprawdzaj jaką komendę podał użytkownik według poniższej rozpiski: 
+   - dodaj -> Powinna wypisac tekst: "próba dodania książki"
+   - usun -> Powinna wypisac tekst: "próba usuniecia książki"
+   - wypisz -> Powinna wypisac tekst: "próba wypisania wszystkich książek"
+   - zmien -> Powinna wypisac tekst: "próba zmiany stanu magazynowego książek"
+   - dodaj zamowienie -> Powinna wypisac tekst: "próba dodania nowego zamówienia"
+   - lista zamowien -> Powinna wypisac tekst: "próba wypisania wszystkich zamówień"
+6. Wykorzystaj komende `Console.Clear()` aby po wprowadzeniu komendy ekran konsoli wypisywał tylko menu aplikacji.
+7. Wykorzystaj komendę `Console.WriteLine` aby wyświetlić użytkownikowi możliwe do wpisania komendy.
 8. *W przypadku kiedy uzytkownik poda nie wspierana komende, aplikacja powinna wyswietlic informacje ze podana komenda nie jest wspierana
 9. *Po kazdej komendzie aplikacja powinna wyswietlic napis: `Press AnyKey` i wstrzymac wykonywanie programu do czasu wcisniecia klawisza
